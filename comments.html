@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/com.css" /> -->
+    <title>Trip CodeU</title>
+  </head>
+  <body>
+    <!-- ! NAVBAR START -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TravelU</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              TravelU
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./content.html">City</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Company
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="./html/aboutus.html"
+                      >About us</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./html/colloborate.html"
+                      >Collab</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./comments.html">Feedback</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="inpSearch"
+              />
+              <button class="btn btn-success" type="button" id="btnSearch">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ! NAVBAR FINISH -->
+
+    <h1 class="mt-5 pt-2 mx-auto text-center text-primary" style="width: 300px">
+      Reviews from world stars
+    </h1>
+
+    <!--CARD COMMENT START-->
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-3">
+              <div class="card bl-light text-dark mb-4">
+                <div class="card-body text-center">
+                  <img
+                    src="./img/comments/202183436_1174473083056281_7191844845131551308_n.webp"
+                    class="card-img-top w-50"
+                    alt="..."
+                  />
+                  <p class="card-text">
+                    <small class="text-muted">Дженнифер Ло́пес</small>
+                  </p>
+                  <h5 class="card-title">Турция</h5>
+                  <p class="card-text">
+                    Много замечательных людей. Этим я думаю должны славиться все
+                    места, поэтому спасибо огромное за тепло!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card bl-light text-dark mb-4">
+                <div class="card-body text-center">
+                  <img
+                    src="./img/comments/Leonardo_DiCaprio_2014.jpeg"
+                    class="card-img-top w-50"
+                    alt="..."
+                  />
+                  <p class="card-text">
+                    <small class="text-muted">Леонардо Ди Каприо</small>
+                  </p>
+                  <h5 class="card-title">Кипр</h5>
+                  <p class="card-text">
+                    Нас очень хорошо встретили, накормили вкусным завтраком. Мне
+                    здесь очень нравится, очень уютно. Спасибо!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card bl-light text-dark mb-4">
+                <div class="card-body text-center">
+                  <img
+                    src="./img/comments/angelina-jolie.jpeg"
+                    class="card-img-top w-50"
+                    alt="..."
+                  />
+                  <p class="card-text">
+                    <small class="text-muted">Анджелина Джоли</small>
+                  </p>
+                  <h5 class="card-title">Кипр</h5>
+                  <p class="card-text">
+                    Для нас очень важно иметь такое уютное место, где можем
+                    провести свободное от работы время.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card bl-light text-dark mb-4">
+                <div class="card-body text-center">
+                  <img
+                    src="./img/comments/65a3ad1641701a5d13ed112b908763c8_cropped_666x1001.jpeg"
+                    class="card-img-top w-50"
+                    alt="..."
+                  />
+                  <p class="card-text">
+                    <small class="text-muted">Марк Цукерберг</small>
+                  </p>
+                  <h5 class="card-title">Кипр</h5>
+                  <p class="card-text">
+                    Спасибо большое за ваше радушие, улыбки, за ваше тепло,
+                    такое ощущение, что меня на руках носят. Спасибо большое
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-3">
+              <div class="card bl-light text-dark mb-4">
+                <div class="card-body text-center">
+                  <img
+                    src="./img/comments/Elon_Musk_Royal_Society_(crop2).jpg.webp"
+                    style="height: 150px"
+                    class="card-img-top w-50"
+                    alt="..."
+                  />
+                  <p class="card-text">
+                    <small class="text-muted">И́лон Маск</small>
+                  </p>
+                  <h5 class="card-title">Кипр</h5>
+                  <p class="card-text">
+                    Я хотел бы поблагодарить вас за этот чудесный день. Вы
+                    позволили мне встретиться с большим количеством людей.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card bl-light text-dark mb-4">
+                <div class="card-body text-center">
+                  <img
+                    src="./img/comments/GettyImages-1206321276.webp"
+                    style="height: 150px"
+                    class="card-img-top w-50"
+                    alt="..."
+                  />
+                  <p class="card-text">
+                    <small class="text-muted">Ванесса Хадженс</small>
+                  </p>
+                  <h5 class="card-title">Кипр</h5>
+                  <p class="card-text">
+                    Прекрасный выбор для тех, кто хочет восстановить силы. Это
+                    место известно своей семейной атмосферой.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card bl-light text-dark mb-4">
+                <div class="card-body text-center">
+                  <img
+                    src="./img/comments/ilPBHd3r3ahlipNQtjr4E3G04jJ.jpeg"
+                    class="card-img-top w-50"
+                    alt="..."
+                  />
+                  <p class="card-text">
+                    <small class="text-muted">Джо́нни Депп</small>
+                  </p>
+                  <h5 class="card-title">Кипр</h5>
+                  <p class="card-text">
+                    Спасибо за прекрасный отдых.Очень рады что для отдыха нам
+                    посоветовали именно вас.Спасибо вам за всё!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card bl-light text-dark mb-4">
+                <div class="card-body text-center">
+                  <img
+                    src="./img/comments/Robert_Downey%252C_Jr.webp"
+                    class="card-img-top w-50"
+                    alt="..."
+                  />
+                  <p class="card-text">
+                    <small class="text-muted">Роберт Дауни-младший</small>
+                  </p>
+                  <h5 class="card-title">Кипр</h5>
+                  <p class="card-text">
+                    Одни положительные эмоции!Чисто,красиво.Питание на
+                    отлично.Захотели бы вернуться?Да.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-3">
+              <div class="card bl-light text-dark mb-4">
+                <div class="card-body text-center">
+                  <img
+                    src="./img/comments/Kani.jpeg"
+                    class="card-img-top w-50"
+                    style="max-height: 160px"
+                    alt="..."
+                  />
+                  <p class="card-text">
+                    <small class="text-muted">Канье Уэст</small>
+                  </p>
+                  <h5 class="card-title">Кипр</h5>
+                  <p class="card-text">
+                    Самое главное мы взял с собой хорошее настроение, нашли
+                    много хороших людей с кем ярко проводили время.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card bl-light text-dark mb-4">
+                <div class="card-body text-center">
+                  <img
+                    src="./img/comments/kim-1.jpeg"
+                    class="card-img-top w-50"
+                    style="height: 160px"
+                    alt="..."
+                  />
+                  <p class="card-text">
+                    <small class="text-muted">Ким Кардашьян</small>
+                  </p>
+                  <h5 class="card-title">Кипр</h5>
+                  <p class="card-text">
+                    Мы с мужем замечательно отдохнули, нам очень понравилось,
+                    особенно очень большой выбор фруктов
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card bl-light text-dark mb-4">
+                <div class="card-body text-center">
+                  <img
+                    src="./img/comments/shak.jpeg"
+                    class="card-img-top w-50"
+                    style="height: 160px"
+                    alt="..."
+                  />
+                  <p class="card-text">
+                    <small class="text-muted">Шакира</small>
+                  </p>
+                  <h5 class="card-title">Кипр</h5>
+                  <p class="card-text">
+                    Обязательно стоит сходить в популярный в средиземноморского
+                    ресторана, например в Up Hill Lounge.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card bl-light text-dark mb-4">
+                <div class="card-body text-center">
+                  <img
+                    src="./img/comments/Drake.jpeg"
+                    class="card-img-top w-50"
+                    style="height: 160px"
+                    alt="..."
+                  />
+                  <p class="card-text">
+                    <small class="text-muted">Дрейк</small>
+                  </p>
+                  <h5 class="card-title">Кипр</h5>
+                  <p class="card-text">
+                    Расположение от моря не очень далеко, дорога не напрягает.
+                    Заход в море отличный. Мне очень нравятся пляжи.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--CARD COMMENT FINISH-->
+
+    <!-- ! FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-wrapper">
+          <div class="footer-items">
+            <p class="footer-title">Company</p>
+            <div class="footer-links__wrapper">
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+            </div>
+          </div>
+          <div class="footer-items">
+            <p class="footer-title">Company</p>
+            <div class="footer-links__wrapper">
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+            </div>
+          </div>
+          <div class="footer-items">
+            <p class="footer-title">Company</p>
+            <div class="footer-links__wrapper">
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+            </div>
+          </div>
+          <div class="footer-items">
+            <p class="footer-title">Company</p>
+            <div class="footer-links__wrapper">
+              <img src="./html/img/artwork.svg" alt="playmarket" />
+              <img src="./html/img/ios.svg" alt="istore" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="footer-container copyright-wrap">
+          <div class="copyright-item">
+            <p>© 2020 - All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ! FOOTER END -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+body {
+  max-width: 100%;
+  background: rgb(235, 234, 242);
+  background: linear-gradient(
+    90deg,
+    rgba(235, 234, 242, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(241, 241, 241, 1) 0%,
+    rgba(210, 216, 232, 1) 0%,
+    rgba(178, 218, 217, 1) 0%,
+    rgba(107, 229, 247, 1) 41%,
+    rgba(171, 229, 240, 1) 80%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.paragraf {
+  margin: 0 auto;
+  color: rgb(254, 254, 255);
+  padding: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12;
+  background-color: rgb(222, 238, 79);
+  border-radius: 20px;
+  width: 60%;
+}
+.text-muted {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 10px;
+  background-color: cyan;
+}
+
+/* ! Company START */
+.slider {
+  height: 70vh !important;
+  margin-top: 100px;
+  border-radius: 5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin: 130px auto;
+  margin-bottom: 50px;
+  height: 540px;
+  background-color: #f4f5f6;
+  border-radius: 50px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.info img {
+  width: 450px;
+  height: 500px;
+  border-radius: 10%;
+}
+
+.info__description img {
+  width: 109px;
+  height: 10px;
+  margin-top: 50px;
+}
+
+.info .info__description h2 {
+  font-size: 40px;
+  max-width: 195px;
+  margin: 20px 0;
+}
+.info .info__description p {
+  max-width: 414px;
+  font-size: 16px;
+  color: #576d81;
+  line-height: 24px;
+}
+
+.footer {
+  background: black;
+}
+.footer-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.footer p {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer-links__wrapper a {
+  color: #ffffff;
+  padding-bottom: 12px;
+  text-decoration: none;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 0;
+}
+.footer-links__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.footer-links__wrapper img {
+  margin: 10px 0;
+}
+
+.copyright {
+  border-top: 1px solid #ffffff38;
+  padding: 20px 0;
+}
+.copyright-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.copyright-wrap a {
+  margin: 0 6px;
+  background: #555b646e;
+  display: inline-block;
+  padding: 7px 8px 1px;
+  border-radius: 50%;
+}
+
+/* footer styles end */
+
+/* ! Company FINISH */

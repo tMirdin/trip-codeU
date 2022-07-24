@@ -1,0 +1,146 @@
+/* ! Company START */
+.slider {
+  height: 70vh !important;
+  margin-top: 100px;
+  border-radius: 5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin: 130px auto;
+  margin-bottom: 50px;
+  height: 540px;
+  background-color: #f4f5f6;
+  border-radius: 50px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.info img {
+  width: 450px;
+  height: 500px;
+  border-radius: 10%;
+}
+
+.info__description img {
+  width: 109px;
+  height: 10px;
+  margin-top: 50px;
+}
+
+.info .info__description h2 {
+  font-size: 40px;
+  max-width: 195px;
+  margin: 20px 0;
+}
+.info .info__description p {
+  max-width: 414px;
+  font-size: 16px;
+  color: #576d81;
+  line-height: 24px;
+}
+
+.footer {
+  background: black;
+}
+.footer-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.footer p {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer-links__wrapper a {
+  color: #ffffff;
+  padding-bottom: 12px;
+  text-decoration: none;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 0;
+}
+.footer-links__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.footer-links__wrapper img {
+  margin: 10px 0;
+}
+
+.copyright {
+  border-top: 1px solid #ffffff38;
+  padding: 20px 0;
+}
+.copyright-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.copyright-wrap a {
+  margin: 0 6px;
+  background: #555b646e;
+  display: inline-block;
+  padding: 7px 8px 1px;
+  border-radius: 50%;
+}
+
+/* footer styles end */
+
+/* ! Company FINISH */
+.cardBook:hover {
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.42);
+}
+
+.para {
+  white-space: nowrap; /*Запрещаем перенос строк*/
+  overflow: hidden;
+  padding: 7px; /* Поля вокруг текста */
+  text-overflow: ellipsis;
+  border-left: 0.2px solid rgba(0, 0, 0, 0.089);
+  border-bottom: 0.2px solid rgba(0, 0, 0, 0.144);
+}
+
+.background-trip {
+  margin-top: 56px;
+  background-image: url("https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/pamukkale-12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  width: 100%;
+  height: 100vh;
+  background-attachment: local;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+  padding-top: 150px;
+  overflow: hidden;
+}
+.title-trip {
+  overflow: hidden;
+  font-size: 152px;
+  font-weight: 800;
+  transition: 0.8s;
+  color: rgb(255, 255, 255);
+  letter-spacing: 8px;
+  cursor: pointer;
+}
+.title-trip:hover {
+  overflow: hidden;
+  text-decoration: underline;
+  transform: scale(1.08);
+  color: rgb(255, 121, 32);
+}

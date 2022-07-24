@@ -1,0 +1,88 @@
+{
+  "trip": [
+    {
+      "tripTitle": "Ghbdtn",
+      "tripDesc": "87fhgjdfhgjhfsjghjdfhgjhdfjghjkdfhgjjkhdfhgjkdsklfjsdkjflsdjfklsdfjsdkjflksdjflkjsdklfhjkdhasfhwefdsnf,mxn,mcnsdjfhasjdasjdkajsldsfhadsfhjjdhgjkadsfsdlfjhsdhfklsjdlkfjsldkfjkl8",
+      "tripImg": "https://static-cse.canva.com/blob/847064/29.jpg",
+      "tripPrice": "878787",
+      "id": 2
+    },
+    {
+      "tripTitle": "Россия",
+      "tripDesc": "23456788",
+      "tripImg": "314567890",
+      "tripPrice": "15000",
+      "id": 5
+    },
+    {
+      "tripTitle": "Египет",
+      "tripDesc": "фывфывфыв",
+      "tripImg": "https://www.tourprom.ru/site_media/images/upload/2021/6/15/newsphoto/egipet-stop-turyi.jpg",
+      "tripPrice": "8978",
+      "id": 6
+    },
+    {
+      "tripTitle": "Сомали",
+      "tripDesc": "78",
+      "tripImg": "7",
+      "tripPrice": "897",
+      "id": 7
+    },
+    {
+      "tripTitle": "Ghbdtn",
+      "tripDesc": "878",
+      "tripImg": "https://static-cse.canva.com/blob/847064/29.jpg",
+      "tripPrice": "878787",
+      "id": 4
+    },
+    {
+      "tripTitle": "Россия",
+      "tripDesc": "23456788",
+      "tripImg": "314567890",
+      "tripPrice": "15000",
+      "id": 8
+    },
+    {
+      "tripTitle": "Египет",
+      "tripDesc": "фывфывфыв",
+      "tripImg": "https://www.tourprom.ru/site_media/images/upload/2021/6/15/newsphoto/egipet-stop-turyi.jpg",
+      "tripPrice": "8978",
+      "id": 9
+    },
+    {
+      "tripTitle": "Сомали",
+      "tripDesc": "78",
+      "tripImg": "7",
+      "tripPrice": "897",
+      "id": 10
+    },
+    {
+      "tripTitle": "Ghbdtn",
+      "tripDesc": "878",
+      "tripImg": "https://static-cse.canva.com/blob/847064/29.jpg",
+      "tripPrice": "878787",
+      "id": 11
+    },
+    {
+      "tripTitle": "Россия",
+      "tripDesc": "23456788",
+      "tripImg": "314567890",
+      "tripPrice": "15000",
+      "id": 12
+    },
+    {
+      "tripTitle": "Египет",
+      "tripDesc": "фывфывфыв",
+      "tripImg": "https://www.tourprom.ru/site_media/images/upload/2021/6/15/newsphoto/egipet-stop-turyi.jpg",
+      "tripPrice": "8978",
+      "id": 13
+    },
+    {
+      "tripTitle": "Сомали",
+      "tripDesc": "78",
+      "tripImg": "7",
+      "tripPrice": "897",
+      "id": 14
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip CodeU</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- ! NAVBAR START -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TravelU</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              TravelU
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../content.html">City</a>
+              </li>
+
+              <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Company</a>
+                </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Company
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="./aboutus.html">About us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./colloborate.html"
+                      >Collab</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../comments.html">Feedback</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="inpSearch"
+              />
+              <button class="btn btn-success" type="button" id="btnSearch">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ! NAVBAR FINISH -->
+
+    <!-- ! ABOUT US PHOTO SLIDER START -->
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide w-75 mx-auto mt-5"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner slider">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img
+            src="https://www.freakytravel.com/wp-content/uploads/hiker-ocean-extreme.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="https://ychef.files.bbci.co.uk/976x549/p0btdbvr.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- ! ABOUT US PHOTO SLIDER END -->
+
+    <!-- !ABOUT US START-->
+    <div class="aboutUs d-flex flex-column align-items-center ms-5 me-5 mt-5">
+      <h2>О нас</h2>
+      <p class="ms-5 me-5" data-aos="fade-right">
+        Сегодня компания занимает лидирующие позиции в туристической отрасли и
+        позиционируется как марка надежности и качества. Собственные принимающие
+        компании обслуживают клиентов TravelГ в Турции, Египте, Греции, Испании,
+        ОАЭ, Таиланде, Вьетнаме и Тунисе.В дальнейших планах TravelU –
+        увеличение доли, занимаемой компанией на рынке, расширение бизнеса за
+        счет повышения качества, развития новых направлений и расширения
+        ассортимента предоставляемых услуг.
+      </p>
+
+      <p class="ms-5 me-5" data-aos="fade-left">
+        Туроператор TravelU предлагает лучшие курорты и отели в 40 странах мира,
+        среди которых Австрия, Андорра, Бахрейн, Беларусь, Болгария, Вьетнам,
+        Греция, Грузия, Доминиканская Республика, Египет, Израиль, Индия,
+        Индонезия, Иордания, Испания, Италия, Катар, Кения, Кипр, Куба,
+        Шри-Ланка. Идет постоянная работа по открытию новых направлений.
+        Туроператор организует групповые и индивидуальные туры FIT на базе
+        собственных чартерных программ и регулярных рейсов, занимается развитием
+        инсентив-, конгресс-, спортивного и других видов туризма, а также
+        активно продает авиабилеты в онлайн.
+      </p>
+      <p class="ms-5 me-5" data-aos="fade-right">
+        Миссия TravelU заключается в том, чтобы максимально способствовать
+        созданию цивилизованного туристского рынка, где отношения в цепочке
+        клиент - агент - оператор основаны на взаимном доверии и уважении.
+        Конечная цель деятельности компании – сделать качественный отдых
+        доступным для всех категорий населения страны.
+      </p>
+      <p class="ms-5 me-5" data-aos="fade-left">
+        Удовлетворенные работники приводят к удовлетворенным клиентам. Мы знаем,
+        что развитие и достижения нашей организации зависят от ежедневного
+        удовлетворения потребностей наших клиентов. Это дополнительная наша
+        гарантия.
+      </p>
+    </div>
+    <!--! ABOUT US FINISH -->
+    <!--! OUR HISTORY START -->
+    <div class="ourHistory" style="margin-left: 10%; margin-right: 10%">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">
+            1993 год – создание агентства международного туризма «СМОК»
+          </h5>
+          <p class="card-text">
+            Наша компания – почти ровесник современноготурбизнеса. С 1991 года –
+            даты развала Советского союза – началась новая веха в истории, новая
+            эпоха. А вместе с ней стала формироваться современная туристическая
+            отрасль страны. Это было время перемен, время, в которое на свет
+            появилось агентство SMOK TRAVEL. Открытие первого офиса состоялось
+            на тот момент едва ли не в самом высотном здании Минска – в
+            гостинице «Беларусь».
+          </p>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">
+            1998 год – членство в Альянсе Международного Туризма (AIT) и
+            American Society of Travel Agents (ASTA)
+          </h5>
+          <p class="card-text">
+            SMOK TRAVEL – член Альянса Международного Туризма (AIT) (ныне FIA),
+            объединяющего туристические и автомобильные клубы из 102 стран мира.
+            Основное внимание в своей деятельности FIA уделяет автомобильному
+            туризму. Это новое для белорусского туризма направление, и как член
+            AIT (FIA) наше агентство серьезно взялось за организацию туров для
+            автолюбителей. Автотуризм – путешествия на своей машине по Европе -
+            еще одно интересное направление нашего агентства. В феврале 1998
+            года SMOK TRAVEL становится также членом American Society of Travel
+            Agents (ASTA) – крупнейшей и одной из самых престижных в мире
+            ассоциации туристических агентов, насчитывавшей тогда более 27000
+            членов в 168 странах мира.
+          </p>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">
+            2004 год – появление системы бронирования авиабилетов Sabre
+          </h5>
+          <p class="card-text">
+            В работе компании появляется очередное новшество – система
+            бронирования авиабилетов Sabre, разработанная одним из мировых
+            лидеров в области дистрибуции и розничных продаж туристических
+            продуктов. Каждый год, проведенный вместе со SMOKTRAVEL – это не
+            только приятный и незабываемый отдых, это и чудесные призы, и
+            неожиданные подарки, и приятные сюрпризы, которые компания
+            продолжает дарить клиентам в ходе рекламных игр и акций. Летом этого
+            года также не обошлось без сюрпризов!
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">
+            2007 год – решение об использовании программы автоматизации
+            «Мастер-тур»
+          </h5>
+          <p class="card-text">
+            Поддерживая репутацию компании-новатора, шагающей в ногу со
+            временем, SMOKTRAVEL стремиться стать более оснащенным и
+            усовершенствованным. Принимая решение об использовании программы
+            автоматизации «Мастер-тур», разработанной специально для удобства
+            туристических фирм, SMOKTRAVEL оказывается в числе ее первых
+            белорусских пользователей. Сегодня «Мастер-тур» используют в 250
+            компаниях России и стран СНГ. Благодаря ей обслуживать наших дорогих
+            клиентов стало еще проще и быстрее!
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">
+            2011 год – проведение ребрендинга и акции «SMOKTRAVEL – плодим
+            туристов по миру»
+          </h5>
+          <p class="card-text">
+            На 18 году жизни в SMOKTRAVEL произошли существенные перемены. В год
+            своего совершеннолетия компания не только провела ребрендинг, но и
+            сменила фирменные цвета, выбрала новый слоган: «Туры от А до Я».
+            Оставаясь верными своим традициям, команда SMOKTRAVEL провела акцию
+            и рекламную игру «SMOKTRAVEL – плодим туристов по миру», суть
+            которой заключалась в том, что каждый клиент компании, отдохнувший в
+            летний сезон-2011, получил в подарок фирменного
+            кролика-путешественника.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--! OUR HISTORY FINISH -->
+
+    <!-- ! FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-wrapper">
+          <div class="footer-items">
+            <p class="footer-title">Company</p>
+            <div class="footer-links__wrapper">
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+            </div>
+          </div>
+          <div class="footer-items">
+            <p class="footer-title">Company</p>
+            <div class="footer-links__wrapper">
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+            </div>
+          </div>
+          <div class="footer-items">
+            <p class="footer-title">Company</p>
+            <div class="footer-links__wrapper">
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+            </div>
+          </div>
+          <div class="footer-items">
+            <p class="footer-title">Company</p>
+            <div class="footer-links__wrapper">
+              <img src="./img/artwork.svg" alt="playmarket" />
+              <img src="img/ios.svg" alt="istore" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="footer-container copyright-wrap">
+          <div class="copyright-item">
+            <p>© 2020 - All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ! FOOTER END -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

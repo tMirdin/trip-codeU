@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip CodeU</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/content.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ! NAVBAR START -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TravelU</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              TravelU
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./content.html">City</a>
+              </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Company</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Company
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="./html/aboutus.html"
+                      >About us</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./html/colloborate.html"
+                      >Collab</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./comments.html">Feedback</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="inpSearch"
+              />
+              <button class="btn btn-success" type="button" id="btnSearch">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ! NAVBAR FINISH -->
+
+    <h1 class="mt-5 mb-5 pt-3 mx-auto text-light" style="width: 440px">
+      The most visited cities
+    </h1>
+
+    <div
+      data-aos="flip-left"
+      class="card mb-5 mx-auto"
+      style="max-width: 750px; height: 265px"
+    >
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img
+            src="https://carthage.group/wp-content/uploads/elementor/thumbs/-2-ox21zzeczxa7n1hvqiswnk15ztmqv841wn7cr2jl6o.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">DUBAI</h5>
+            <p class="card-text" style="font-size: 12px">
+              Дубай — невероятный! Этот крупнейший город ОАЭ не перестает
+              меняться и удивлять. Даже те, кто побывал в эмирате всего 7-10 лет
+              назад, уже не имеют полного права говорить «Я видел Дубай», потому
+              как Дубай каждый день готовит новые сюрпризы своим жителям и
+              гостям. Неизменными остаются лишь несколько вещей: стремительное
+              движение города вверх, к сияющим звездам и новым рекордам высоты
+              зданий, невероятная архитектура и грандиозность проектов,
+              ошеломительный шоппинг, насыщенная ночная и развлекательная жизнь
+              и пустыня, в которой вырос этот современный и космополитичный
+              центр притяжения.
+            </p>
+            <p class="card-text" style="font-size: 12px">
+              <small class="text-muted"> Туры от 1100$</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-aos="flip-left"
+      class="card mb-5 mx-auto"
+      style="max-width: 750px; height: 280px"
+    >
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mqLhM27Ku1cUP7DKL30qOIOYC0f3tDdjJg&usqp=CAU"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Paris</h5>
+            <p class="card-text" style="font-size: 12px">
+              Париж по большом счету бессмысленно. Не потому, что писать не о
+              чем — боже упаси! Просто этот город как ни один город в мире не
+              хочет укладываться в рамки и соответствовать стереотипам. Конечно,
+              всякий слышал об утреннем кофе с круассанами, вечерних бистро с
+              шумными столиками, запахе жареных каштанов на парижских
+              бульварах... но для кого-то Париж — это гулкий полумрак Нотр-Дама,
+              тихий шепот туристов в залах Лувра и почти безлюдный, застроенный
+              старинными особняками остров Сен-Луи. Для кого-то столица Франции
+              — прежде всего Эйфелева башня, памятник «эпохе пара и
+              электричества», а современные архитекторы отправляются в Париж,
+              чтобы вдохновиться авангардными линиями квартала Дефанс и башни
+              Монпарнас.
+            </p>
+            <p class="card-text" style="font-size: 12px">
+              <small class="text-muted">Туры от 1000$</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-aos="flip-left"
+      class="card mb-5 mx-auto"
+      style="max-width: 750px; height: 254px"
+    >
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs8l3HBzd245OqI60QL9CHdwl31E03lknQOA&usqp=CAU"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Каир</h5>
+            <p class="card-text" style="font-size: 12px">
+              Каир (араб. al-Qāhira — «победоносная») — столица Египта и самый
+              большой город Африки. Сами египтяне его часто называют — Маср. Это
+              шумный, эклектичный и местами весьма грязный мегаполис, снискавший
+              славу арабского Рима — за огромное число памятников старины и
+              такое же количество туристов.
+            </p>
+            <p class="card-text" style="font-size: 12px">
+              <small class="text-muted">Туры от 750$</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-aos="flip-left"
+      class="card mb-5 mx-auto"
+      style="max-width: 750px; height: 265px"
+    >
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img
+            src="https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__popular_attractions/public/hero_banner/Colosseum-Rome.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Рим</h5>
+            <p class="card-text" style="font-size: 12px">
+              Вечный город, куда ведут все дороги, где можно прожить всю жизнь
+              за одни каникулы длиной в день или потеряться на несколько недель.
+              Концентрация достопримечательностей в Риме достигает таких
+              величин, что всего через пару часов в этом городе сердце и мозг
+              бедного туриста начинают отказываться вмещать новые. Поэтому
+              провести в Риме день-два — просто преступление. Сюда можно
+              приезжать и приезжать, и приезжать. Главное — отдавать себе отчет
+              в том, что Рим — это не Италия. Считайте, что это отдельное
+              государство или даже отдельный мир. Рим чудовищно стар и навсегда
+              молод, он видел расцвет и падение одной из величайших цивилизаций
+              планеты. Неудивительно, что весь его исторический центр объявлен
+              объектом Всемирного наследия человечества.
+            </p>
+            <p class="card-text" style="font-size: 12px">
+              <small class="text-muted">Туры от 900$</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-aos="flip-left"
+      class="card mb-5 mx-auto"
+      style="max-width: 750px; height: 285px"
+    >
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img
+            src="http://cdn.cnn.com/cnnnext/dam/assets/200130152949-17-famous-new-york-buildings-restricted.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Нью-Йорк</h5>
+            <p class="card-text" style="font-size: 12px">
+              Собираясь в Нью-Йорк, не рассчитывайте разведать на месте, почему
+              его называют «Большим яблоком» — даже сами нью-йоркцы не смогут
+              вам ответить на этот вопрос. Версий, как всегда бывает в таких
+              случаях, множество — одна нелепее другой. Лучше приготовьтесь к
+              тому, что в одном из самых ярких городов Соединенных Штатов
+              Америки с вами запросто будут заговаривать на улицах, предваряя
+              практически любой разговор сакраментальным «Where are you from?»,
+              что каждый скверик или перекресток будут казаться знакомыми (ведь
+              в каком-то кино вы их точно уже видели), что остаться в
+              одиночестве или хотя бы оказаться в относительно малолюдном месте
+              в гудящем словно улей мегаполисе не получится.
+            </p>
+            <p class="card-text" style="font-size: 12px">
+              <small class="text-muted">Туры от 1000$</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-aos="flip-left"
+      class="card mb-5 mx-auto"
+      style="max-width: 750px; height: 280px"
+    >
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img
+            src="https://wikiway.com/upload/resize_cache/iblock/77e/420_2150_1/novaya-mechet.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Стамбул</h5>
+            <p class="card-text" style="font-size: 12px">
+              Загадочный и величественный, шумный и сказочно красивый, Стамбул —
+              это мост между Европой и Азией, между традиционным Востоком и
+              современным Западом. За всю свою богатую историю он успел сменить
+              несколько имен и побывать столицей четырех империй: Римской и
+              Византийской, Османской и Латинской
+            </p>
+            <p class="card-text" style="font-size: 12px">
+              <small class="text-muted">Туры от 600$</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-aos="flip-left"
+      class="card mb-5 mx-auto"
+      style="max-width: 750px; height: 240px"
+    >
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ35gwxwrIl8A4JisBObtcqsWjc0yeRPrjPg&usqp=CAU"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Сингапур</h5>
+            <p class="card-text" style="font-size: 12px">
+              Сингапур — страна с повышенным содержанием экзотики: здесь мирно
+              сосуществуют десять официальных религий и четыре государственных
+              языка, а яркие фестивали случаются почти еженедельно. Узнайте о
+              лучшем, что может предложить «Город льва» — белоснежных пляжах,
+              национальных парках и островах, отелях, главных событиях,
+              достопримечательностях и многом другом.
+            </p>
+            <p class="card-text" style="font-size: 12px">
+              <small class="text-muted">Туры от 1050$</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-aos="flip-left"
+      class="card mb-5 mx-auto"
+      style="max-width: 750px; height: 285px; background: whitesmoke"
+    >
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img
+            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/234612091.jpg?k=6066c0f9e1311ea026d623b2eacda441d826e335be5298724db06ef937678edd&o=&hp=1"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Бишкек</h5>
+            <p class="card-text" style="font-size: 12px">
+              Бишкек — одновременно очень старый и совсем молодой город, а его
+              достопримечательности — наглядное отражение истории превращения
+              пограничной кокандской крепости в советский Фрунзе, а потом
+              современную столицу Киргизской республики. Поклонники искусств
+              найдут много интересного в художественных галереях и вернисажах.
+              Знатокам истории будут интересны многочисленные памятники и музеи
+              города. Любители природы сполна оценят красоту городских садов и
+              парков.
+            </p>
+            <p class="card-text" style="font-size: 12px">
+              <small class="text-muted">Туры от 450$</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-aos="flip-left"
+      class="card mb-5 mx-auto"
+      style="max-width: 750px; height: 285px"
+    >
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img
+            src="https://icdn.lenta.ru/images/2020/02/22/09/20200222094029613/pwa_vertical_1024_f37997c39fbc7302e07d90d4c4867bae.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Москва</h5>
+            <p class="card-text" style="font-size: 12px">
+              Москва — столица России; остальные эпитеты по сравнению с этим
+              меркнут. Как ни банально это звучит, Москва — город контрастов.
+              Это и «третий Рим», и «большая деревня», и «нерезиновая», место
+              для избранных и для всех. Москва — это Содом и Гоморра в одном
+              флаконе и чинная тишина почти совсем деревенских переулков
+              Замоскворечья, ощетинившийся острыми стеклянными гранями
+              Москва-Сити и непостижимо как сохранившиеся деревянные избы с
+              наличниками в тупиках Китай-города, запись на «Бэнтли» на год
+              вперед и нищие у ворот «Новодевички», небывало холодные зимы и
+              опять-таки небывало жаркие лета, «наш ответ Чемберлену»
+              суперсовременный инноцентр Сколково и заповедные леса всего в паре
+              десятков километров от Кремля... словом, для каждой реалии
+              московской жизни непременно найдется пресловутый контраст.
+            </p>
+            <p class="card-text" style="font-size: 12px">
+              <small class="text-muted">Туры от 900$</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-aos="flip-left"
+      class="card mb-5 mx-auto"
+      style="max-width: 750px; height: 225px"
+    >
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img
+            src="https://funart.pro/uploads/posts/2021-04/1618698790_18-funart_pro-p-madrid-gorod-krasivie-mesta-foto-18.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Мадрид</h5>
+            <p class="card-text" style="font-size: 12px">
+              Мадрид, один из самых красивых городов мира, столица, обладающая
+              колоссальным культурным и художественным наследием. Здесь так
+              органично сочетаются современные бизнес-центры и средневековая
+              архитектура, лучшие ночные клубы Европы, крупнейшие аутлеты,
+              прекрасные парки и, конечно же, множество музеев.
+            </p>
+            <p class="card-text" style="font-size: 12px">
+              <small class="text-muted">Туры от 822$ подробнее>>></small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="text-center">
+      <h2 class="mt-5 mb-5 mx-auto" style="width: 200px">Reviews</h2>
+      <p class="paragraf">
+        Елена: Пишу отзывы всегда очень субъективные, чтобы поделиться именно
+        впечатлениями, а цены вы и так сами сможете найти в интернете, да и цены
+        на туры меняются постоянно, за подбором тура и лучшими ценами лучше
+        обратиться к специалисту, тем более сейчас не время когда можно взять
+        рюкзак и рвануть куда глаза глядят
+      </p>
+      <p class="paragraf">
+        Алексей Мадрид Одна из самых красивых европейских столиц. Великолепный
+        город, в который сложно не влюбиться.
+      </p>
+      <p class="paragraf">
+        Нурлан Бишкек - типичный постсоветский город в центральной Азии. Здесь
+        нету больших небоскребов, нету метро, Макдональдса и древних архитектур.
+        Но что дает Бишкеку изюминку в путешествии, так это горы. Практически с
+        любой точки города вы можете увидеть величественные горы Ала-Тоо.
+        Выехать буквально 40 км от города и вы окажетесь сами в горах. Ущелье
+        Аламедин и национальный парк Ала-Арча. Белоснежные вершины и альпийские
+        луга.
+      </p>
+      <p class="paragraf">
+        Петр Москва довольно контрастный город! Здесь найдёт что посмотреть
+        любой путешественник! Развлечения на любой вкус! Очень понравилось, что
+        Москва зелёный город много парков, красивых улиц, скверов!
+      </p>
+      <p class="paragraf">
+        Маша Сингапур - самый красивый город на земле Впервые в жизни посетила
+        Сингапур в середине Мая этого года! Если честно я часто по миру езжу, по
+        этому не всегда меня удивить, за свою жизнь могу сказать видела много
+        городов, много интересных мест и так же много индивидуальных фишек
+        разных городов. Если честно Сингапур меня впечатлил по истине, и смог
+        удивить.
+      </p>
+      <p class="paragraf">
+        Саша 5 дней в Стамбуле: интересно, вкусно, красиво! Делюсь лучшими
+        местами для шопинга! Да простят меня эллины, но в Стамбуле как в Греции,
+        есть все! Удивительный город. Один из немногих, куда я готова
+        возвращаться, по несколько раз в год в любое время года. Поводов при
+        этом предостаточно! Гулять тут приятно всегда, зимой не холодно, а летом
+        не слишком жарко. Тут будет интересно людям всех возрастов, социальных
+        статусов и вероисповеданий. Если на свете и остались люди, которые не
+        были в Стамбуле, нужно срочно это исправить!
+      </p>
+
+      <p class="paragraf">
+        Костя Каир достоин вашего внимания более, чем на один день Каир большой,
+        шумный, грязный и очень колоритный город. В преддверии моей второй
+        поездки в этот потрясающий город (а октябрь и ноябрь лучшие месяцы для
+        его посещения), хочу поделиться с вами своими впечатлениями и
+        достопримечательностями, которые вряд ли можно будет посетить приезжая
+        на один день из Хургады
+      </p>
+      <p class="paragraf">
+        Иван ГОРОД, В КОТОРЫЙ ХОЧЕТСЯ ВЕРНУТЬСЯ В Нью-Йорке я была несколько раз
+        и каждый раз этот город открывался по — своему, с какой-то неведомой мне
+        стороны, но всякий раз он великолепен, а таймс- сквер- это бриллиант в
+        золотом обрамлении, город- сказка, город- театр.
+      </p>
+      <p class="paragraf">
+        Денис Рим это бесконечное множество шедевров: архитектурных,
+        исторических, пищевых. История тысячелетняя, больше такой нет нигде!
+      </p>
+      <p class="paragraf">
+        Роман Париж Безумное количество прекрасных памятников архитектуры; все
+        компактно; своя неповторимая обстановка и антураж.
+      </p>
+    </div>
+
+    <!-- ! FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-wrapper">
+          <div class="footer-items">
+            <p class="footer-title">Company</p>
+            <div class="footer-links__wrapper">
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+            </div>
+          </div>
+          <div class="footer-items">
+            <p class="footer-title">Company</p>
+            <div class="footer-links__wrapper">
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+            </div>
+          </div>
+          <div class="footer-items">
+            <p class="footer-title">Company</p>
+            <div class="footer-links__wrapper">
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+              <a href="#">Help Center</a>
+            </div>
+          </div>
+          <div class="footer-items">
+            <p class="footer-title">Company</p>
+            <div class="footer-links__wrapper">
+              <img src="./html/img/artwork.svg" alt="playmarket" />
+              <img src="./html/img/ios.svg" alt="istore" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="footer-container copyright-wrap">
+          <div class="copyright-item">
+            <p>© 2020 - All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ! FOOTER END -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
